@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab1</title>
+    <style>
+      .container {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin: auto;
+      }
+      .flex-container {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        flex-direction: row;
+        line-height: 50px;
+      }
+
+      .flex-item1 {
+        padding: 0 40px;
+      }
+
+      .flex-item2 {
+        padding-left: 100px;
+      }
+
+      .pad-left-3 {
+        padding-left: 60px;
+      }
+
+      .text-format {
+        vertical-align: top;
+      }
+
+      .button-style {
+        padding-top: 360px;
+        text-align: center;
+      }
+
+      a {
+        padding-right: 40px;
+      }
+
+      button {
+        width: 150px;
+      }
+
+      select {
+        width: 150px;
+      }
+
+      footer {
+        font-family: sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Devera Store</h1>
+      <nav class="flex-container">
+        <a href="#">Hotest</a>
+        <a href="#">Best Seller</a>
+        <a href="#">Trending</a>
+        <a href="#">Sport</a>
+        <a href="#">Music</a>
+      </nav>
+      <h1>Add Product</h1>
+      <div class="flex-container">
+        <div class="flex-item1">
+          <form action="#">
+            <table>
+              <tr>
+                <td><label for="ProductName">Product Name</label></td>
+                <td>
+                  <input type="text" name="ProductName" placeholder="name" />
+                </td>
+              </tr>
+              <tr>
+                <td><label>Price</label></td>
+                <td>
+                  <input type="number" name="Price" placeholder="price" />
+                </td>
+              </tr>
+              <tr>
+                <td class="text-format">
+                  <label for="description">Description</label>
+                </td>
+                <td>
+                  <textarea
+                    name="description"
+                    id="description"
+                    cols="30"
+                    rows="10"
+                    placeholder="Desc"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-format"><label for="image">image</label></td>
+                <td>
+                  <img
+                    src="./image1.jpg"
+                    alt="image-demo"
+                    width="100px"
+                    height="100px"
+                  />
+                </td>
+              </tr>
+            </table>
+            <div class="pad-left-3">
+              <div>
+                <input type="radio" name="country" />
+                <label for="China">China</label>
+              </div>
+              <div>
+                <input type="radio" name="country" />
+                <td><label for="VietNam">Vietnam</label></td>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="flex-item2">
+          <table>
+            <tr>
+              <td><label for="Category">Category</label></td>
+              <td>
+                <select name="Category" id="category_id">
+                  <option value="Select">Select</option>
+                  <option value="Select">demo1</option>
+                  <option value="Select">demo2</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="pad-left-3">
+            <input type="checkbox" name="freeShip" id="freeship_id" />
+            <td><label for="Freeship">Free ship</label></td>
+          </div>
+          <div class="button-style">
+            <button type="submit" name="Submit">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Devera 2023</p>
+    </footer>
+  </body>
+</html>
