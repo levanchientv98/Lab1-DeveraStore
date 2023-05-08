@@ -1,2 +1,2 @@
 # DeveraStore
-# Lab1 - HtmlBasic 
+Lab1 - HtmlBasic 
